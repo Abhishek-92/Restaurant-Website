@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Shawarma Guys</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="The Shawarma Guys">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#menu">Menu</a></li>
+            <li class="item"><a href="#about">About Us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary"></h1>
+    </section>
+
+    <section id="menu-container">
+        <h1 class="h-primary center">Our Menu</h1>
+        <div id="menu">
+            <div class="box">
+                <img src="img/1.jpg" alt="">
+                <h2 class="h-secondary center">Chicken Shawarma</h2>
+                <h3>₹200</h3>
+                <p class="center">Chicken shawarma involves live fire and a vertical spit, the process starts by marinating the chicken and then roasting it in the
+                    oven. Shawarma is heavily seasoned with a variety of spices including cumin, paprika, cloves. Thin slices of spiced meat are stacked together and
+                    cooked by slowly rotating it.</p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Chicken Egg Shawarma</h2>
+                <h3>₹240</h3>
+                <p class="center">Egg shawarma is certainly one of the most popular street food. The outer shell paratha itself is flaky yet soft. It is not too chewy,
+                    you should not have to tug at it with your teeth. The paratha should be fully cooked and crisp. The filling should be evenly distributed so you get
+                    a little of everything in each bite.</p>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary center">Paneer Shawarma</h2>
+                <h3>₹160</h3>
+                <p class="center">aneer shawarma roll uses paneer keema made with a host of spices and this mixture is further laced over the wheat bread and served 
+                    with mayonnaise or cheese dip alongside. This shawarma has grilled spicy paneer pieces inside pita pocket. This paneer pita is so good and taste 
+                    absolutely delicious.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about-section">
+        <h1 class="h-primary center">About Us</h1>
+            <p>
+                Shawarma is a popular dish originating from the Middle East. It’s a popular street food that is traditionally made in the form of spiced meats that are stacked on 
+                a vertical rotisserie with thin slices shaved off as it rotates. But don’t worry! We can cook our horizontally in a good old pan or on the BBQ!
+            </p>
+            <p>
+                Shawarma was traditionally made with lamb, mutton and chicken though these days you see it with beef too. It’s commonly served in the form of a wrap, though in 
+                some countries you see it served on plates with sides such as seasoned rice or fries, and salads. In this recipe, I’m giving you both options!
+            </p>
+            <p>
+                Shawarma Guys is dedicated to the quality and taste of our food. Our friendly staff is here to make you feel right at home while providing a top-notch experience. 
+                We love doing food trucks and our passion is to keep the lively ambiance we’ve created for our foodies. Come join us in our backyard of South Park while you enjoy 
+                our unique recipes that will keep your stomach full and smile on your face.            
+            </p>      
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="form_container">
+        
+            <form id="submit_form" onsubmit="return handle_form_submission()" action="">
+            <div id="contact-box">
+                <div class="form-group">
+                    <label for="name">First Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Last Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email id : </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number : </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message : </label>
+                    <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                </div>
+                <button type='submit' class="btn btn-outline-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function handle_form_submission()
+        {
+            alert('Form Submitted Successfully');
+            return false;
+        } 
+    </script>
+
+</body>
+
+</html>
